@@ -1,0 +1,12 @@
+header {
+  text-align: center;
+}
+
+.container {
+  /* color: var(--mainCompColor);
+  background-color: var(--mainColor); */
+  color: #eee;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+}

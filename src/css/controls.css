@@ -1,0 +1,94 @@
+.controls {
+  float: right;
+  width: 80%;
+  height: 20rem;
+  padding: 1rem;
+  background-color: var(--mainColor);
+  margin: 1rem;
+}
+
+.list {
+  color: #000;
+  float: left;
+  width: 20%;
+}
+
+.addLetter {
+  float: right;
+}
+
+input[type='text'] {
+  /* font-family: 'sans-serif'; */
+  box-shadow: inset 2px 2px 2px #000, 2px 2px 2px aliceblue;
+  background-color: azure;
+  color: black;
+  width: 100%;
+  margin-bottom: 5rem;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+textarea {
+  /* font-family: 'sans-serif'; */
+  box-shadow: inset 2px 2px 2px #000, 2px 2px 2px aliceblue;
+  background-color: azure;
+  color: black;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+input[type='number']::placeholder {
+  color: var(--mainColor);
+  text-shadow: none;
+}
+
+@media only screen and (max-width: 280px) {
+  .controls {
+    padding: 1px;
+    margin: 10px;
+    width: 100%;
+    /* background-color: #333; */
+  }
+  .addLetter {
+    padding: 1px;
+  }
+
+  .spinnerUp,
+  .spinnerDown {
+    padding: 1px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  .addLetter {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: max-content;
+    padding: 2px;
+    background-color: var(--mainColor);
+  }
+  #btnPlay {
+    padding: 10px;
+    width: fit-content;
+    color: var(--mainFontColor);
+    font-size: 1rem;
+    /* border: 2px solid var(--mainFontColor); */
+    border-radius: 5%;
+    transition: all 0.05s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .controls {
+    padding: 1px;
+    margin: 10px;
+    width: 100%;
+    /* background-color: #333; */
+  }
+}
