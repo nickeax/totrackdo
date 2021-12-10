@@ -4,33 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <script src="./src/js/index.js" type="module" defer></script>
     <title>totrackdo</title>
   </head>
   <body>
     <header>
-      <h2>Keep Track of Stuff</h2>
+      <div class="infoItem">
+        <h4>DDMMYYYY</h4>
+      </div>
+      <div class="infoItem">
+        <h4>Task Title</h4>
+      </div>
+      <div class="infoItem">
+        <h4>HHMMSS</h4>
+      </div>
+      <div class="infoItem">
+        <h4>TOTAL: DAYS:HOURS:MINUTES</h4>
+      </div>
     </header>
     <div class="container">
-      <fieldset>
-        <legend>operations</legend>
+      <div class="leftPane">
         <div class="list">
-          This is where the list of Tasks will appear
+          <div class="listItem">
+            <div class="listItemStart">
+              Finish off error handling
+            </div>
+            <div class="listItemEnd">
+              <span class="btn"><i class="material-icons">edit</i></span>
+              <span class="btn"><i class="material-icons">done</i></span>
+              <span class="btn"><i class="material-icons">input</i></span>
+              <span class="btn">
+                <i class="material-icons">play_arrow</i>
+              </span>
+              <span class="btn"><i class="material-icons">delete</i></span>
+            </div>
+          </div>
+          <div class="listItem">
+            <div class="listItemStart">
+              Right user manual for new software
+            </div>
+            <div class="listItemEnd">
+              <span class="btn"><i class="material-icons">edit</i></span>
+              <span class="btn"><i class="material-icons">done</i></span>
+              <span class="btn"><i class="material-icons">input</i></span>
+              <span class="btn"><i class="material-icons">delete</i></span>
+            </div>
+          </div>
+          <div class="listItem">
+            <div class="listItemStart">
+              Review code changes
+            </div>
+            <div class="listItemEnd">
+              <span class="btn"><i class="material-icons">edit</i></span>
+              <span class="btn"><i class="material-icons">done</i></span>
+              <span class="btn"><i class="material-icons">input</i></span>
+              <span class="btn"><i class="material-icons">delete</i></span>
+            </div>
+          </div>
+          <div class="listItem">
+            <div class="listItemStart">
+              Remove corrupted data
+            </div>
+            <div class="listItemEnd">
+              <span class="btn"><i class="material-icons">edit</i></span>
+              <span class="btn"><i class="material-icons">done</i></span>
+              <span class="btn"><i class="material-icons">input</i></span>
+              <span class="btn"><i class="material-icons">delete</i></span>
+            </div>
+          </div>
         </div>
-        <form action="#" class="controls">
-          <label for="taskTitle">
-            Task Title
-            <input type="text" id="taskTitle" />
-          </label>
-          <br />
-          <label for="taskDescription">
-            Task Description
-            <textarea id="taskDescription"></textarea>
+      </div>
+      <div class="rightPane">
+        <div class="controls">
+          <div class="taskEditWindow" id="taskEditWindow">
+            <label for="taskEditTitle">
+              Task Title
+              <input type="text" id="taskEditTitle" />
+            </label>
             <br />
-          </label>
-          <button>ADD</button>
-        </form>
-      </fieldset>
+            <label for="taskEditDescription">
+              Task Description
+              <textarea id="taskEditDescription"></textarea>
+              <br />
+            </label>
+            <button type="submit" class="btn">EDIT</button>
+          </div>
+
+          <div class="taskAddWindow">
+            <label for="taskAddTitle">
+              Task Title
+              <input type="text" id="taskAddTitle" />
+            </label>
+            <br />
+            <label for="taskAddDescription">
+              Task Description
+              <textarea id="taskAddDescription"></textarea>
+              <br />
+            </label>
+            <button type="submit" class="btn">ADD</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
