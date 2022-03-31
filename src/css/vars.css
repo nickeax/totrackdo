@@ -1,6 +1,6 @@
 :root {
-  --mainBackground: rgb(43, 84, 71);
-  --mainFont: white;
-  --mainDarkTint: rgba(0, 0, 0, 0.385);
-  --mainLightTint: rgba(255, 255, 255, 0.33);
+  --mainBackground: rgb(156, 199, 235);
+  --mainFont: rgba(255, 255, 255, 0.616);
+  --mainDarkTint: rgba(0, 0, 0, 0.103);
+  --mainLightTint: rgba(255, 255, 255, 0.199);
 }
