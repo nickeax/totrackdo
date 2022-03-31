@@ -21,6 +21,7 @@ header {
   width: 100%;
   margin: 1rem;
   padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 fieldset {
@@ -38,6 +39,7 @@ fieldset {
   flex-direction: column;
   justify-content: flex-start;
   width: 60%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 .leftPane {
@@ -61,17 +63,16 @@ fieldset {
 
 .listItem {
   width: 20rem;
-  /* background-color: var(--mainDarkTint); */
-  border-left: 10px solid var(--mainDarkTint);
-  border-bottom: 1px solid var(--mainDarkTint);
+  background-color: var(--mainDarkTint);
+  border: 1px solid var(--mainLightTint);
   /* border-radius: 80px; */
-  margin: 0.8rem 0rem;
-  padding: 5px 10px;
+  margin: 5px 0rem;
+  padding: 5px 5px 1px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 .listItemStart,
 .listItemEnd {
-  font-family: Helvetica, sans-serif;
   font-size: 1.2rem;
   display: flex;
   align-items: flex-start;
@@ -79,10 +80,8 @@ fieldset {
 
 .listItemStart {
   justify-content: flex-start;
-  /* background-color: rgb(226, 75, 75); */
 }
 
 .listItemEnd {
   justify-content: flex-start;
-  /* background-color: rgb(36, 29, 29); */
 }
