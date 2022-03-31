@@ -61,12 +61,11 @@ fieldset {
 
 .listItem {
   width: 20rem;
-  /* background-color: var(--mainDarkTint); */
-  border-left: 10px solid var(--mainDarkTint);
-  border-bottom: 1px solid var(--mainDarkTint);
+  background-color: var(--mainDarkTint);
+  border: 1px solid var(--mainLightTint);
   /* border-radius: 80px; */
-  margin: 0.8rem 0rem;
-  padding: 5px 10px;
+  margin: 5px 0rem;
+  padding: 5px 5px 1px 5px;
 }
 
 .listItemStart,
